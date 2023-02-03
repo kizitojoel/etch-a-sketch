@@ -40,11 +40,20 @@ body{
     flex: 1;
 }
 .grid-item{
-    background-color: black;
+    background-color: white;
     padding: 0px;
-    margin: 0px;
     flex: 1;
-    margin: .1%;
+}
+.grid-lines
+{
+    margin: 0.1%;
+}
+aside button{
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    width: 60%;
+    background-color: gray;
 }
 .header, .footer
 {
@@ -55,20 +64,36 @@ body{
     padding: 12px;
     height: 10vh;
 }
-.footer{
-}
+
 aside{
     width: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls h3{
+    text-align: center;
+    font-size: 24px;
 }
 
 .slider input[type="range"]
 {
-    -webkit-appearance:none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     background: black;
     height: 2px;
 }
 .slider input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none !important;
+    appearance: none;
     background: black;
     width: 12px;
     height: 12px;

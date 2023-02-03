@@ -11,10 +11,12 @@
     <header class="header">Etch a Sketch</header>
     <div class="content">
         <aside class="controls">
+            <h3>Control Center</h3>
             <div class="slider">
-                <input id="gridSize" type="range" min="1" max="64" value="1" oninput="rangeValue.innerText = this.value">
-                <p id="rangeValue">1</p>
+                <input id="gridSize" type="range" min="1" max="64" value="1" oninput="rangeValue.innerText = `${this.value} x ${this.value}`">
+                <p id="rangeValue">1 x 1</p>
             </div>
+            <button onclick="gridLines()">Grid Lines</button>
         </aside>
         <div class="container"></div>
         <aside>
