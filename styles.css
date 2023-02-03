@@ -54,6 +54,7 @@ aside button{
     font-size: 18px;
     width: 60%;
     background-color: gray;
+    margin: 12px;
 }
 .header, .footer
 {

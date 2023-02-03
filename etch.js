@@ -31,14 +31,25 @@ function drawGrid(){
     }
 }
 
+//Changes color of each element by adding style after a mouseover event
 function changeColor(){
     this.setAttribute("style", "background-color: black");
 }
 
+//Implements grid lines
 function gridLines(){
-    const boxes = Array.from(document.getElementsByClassName("grid-item"));
+    const boxes = Array.from(document.getElementsByClassName("grid-item")); //Selects all the grid elements
     console.log(boxes);
     boxes.forEach(box => {
-        box.classList.toggle("grid-lines");
+        box.classList.toggle("grid-lines"); //Class grid lines has a margin of 0.1%
+    });
+}
+
+//Implementing the clear function
+function gridClear(){
+    const boxes = Array.from(document.getElementsByClassName("grid-item")); //Selects all the grid elements
+    console.log(boxes);
+    boxes.forEach(box => {
+        box.setAttribute("style", "background-color: white;"); //Class grid lines has a margin of 0.1%
     });
 }
