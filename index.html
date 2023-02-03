@@ -9,10 +9,21 @@
 </head>
 <body>
     <header class="header">Etch a Sketch</header>
-    <div class="container">
+    <div class="content">
+        <aside class="controls">
+            <div class="slider">
+                <input type="range" min="1" max="64" value="1" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">1</p>
+            </div>
+        </aside>
+        <div class="container">
         
+        </div>
+        <aside>
+                  
+        </aside>
     </div>
     <footer class="footer">&#169 Joel Kizito</footer>
-    
+    <script src="etch.js"></script>
 </body>
 </html>

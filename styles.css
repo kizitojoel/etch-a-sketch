@@ -11,13 +11,21 @@ body{
     justify-content: space-between;
 }
 
+.content
+{
+    display: flex;
+    box-sizing: border-box;
+    max-height: 80vh;
+    justify-content: space-around;
+
+}
 .container
 {
     width: 80vh;
     height: 80vh;
     display: flex;
     border: 2px solid black;
-    align-self: center;
+    justify-self: center;
 }
 .header, .footer
 {
@@ -29,6 +37,14 @@ body{
     height: 10vh;
 }
 .footer{
+}
+aside{
+    width: 20%;
+}
+
+.slider
+{
+
 }
 
 
